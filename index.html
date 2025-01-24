@@ -6,30 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <h1>Tic Tac Toe Game</h1>
     <div class="game">
-        <h1>Tic Tac Toe Game</h1>
       <div class="play-area">
         <div class="container">
           <div class="line-1 line">
-            <div class="box box-1">X</div>
-            <div class="box box-2">O</div>
-            <div class="box box-3">X</div>
+            <div class="box box-1"></div>
+            <div class="box box-2"></div>
+            <div class="box box-3"></div>
           </div>
           <div class="line-2 line">
-            <div class="box box-4">X</div>
-            <div class="box box-5">X</div>
-            <div class="box box-6">X</div>
+            <div class="box box-4"></div>
+            <div class="box box-5"></div>
+            <div class="box box-6"></div>
           </div>
           <div class="line-3 line">
-            <div class="box box-7">X</div>
-            <div class="box box-8">X</div>
-            <div class="box box-9">X</div>
+            <div class="box box-7"></div>
+            <div class="box box-8"></div>
+            <div class="box box-9"></div>
           </div>
         </div>
+        <div class="buttons">
+          <button><i class="fa-solid fa-rotate-right"></i>Undo</button>
+          <button><i class="fa-solid fa-sync"></i>Reset</button>
+        </div>
       </div>
-      <div class="result-area">Result</div>
+      <div class="result-area">
+        <div class="turn item">
+          <h2>Current Turn</h2>
+          <p class="turn-value">X</p>
+        </div>
+        <div class="result item">
+          <h2>Winner is</h2>
+          <p class="result-value">...</p>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
