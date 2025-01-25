@@ -1,7 +1,6 @@
 const boxes = document.querySelectorAll(".box");
 const turnValue = document.querySelector(".turn-value");
 const reset = document.querySelector(".reset");
-const Undo = document.querySelector(".undo");
 const Result = document.querySelector(".result-value");
 
 let arrofBox = Array.from(boxes);
@@ -24,9 +23,7 @@ boxes.forEach((elem) => {
         Result.textContent = winner;
         gameActive = false;
     }
-} else if (checkDraw()) {
-    Result.textContent = "Tie";
-    }
+}
   });
 });
 
@@ -74,6 +71,3 @@ const checkWinner = () => {
   return null; 
 };
 
-const checkDraw = () => {
-  arrofBox.every((box) => box.textContent !== "" && winner != checkWinner());
-};
