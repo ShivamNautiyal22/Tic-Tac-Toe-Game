@@ -117,3 +117,9 @@ button:active{
     scale: 0.94;
     box-shadow: 0px 0px 0px #4800ff70;
 }
+.highlight {
+    background-color: yellow; /* Highlight color */
+    color: black; /* Optional: Change text color */
+    box-shadow: 4px 4px 1px rgba(255, 255, 0, 0.473);
+    transition: 0.6s
+  }
