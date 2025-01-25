@@ -82,6 +82,8 @@ h1{
     transition: 0.2s ease;
     box-shadow: 4px 4px 1px #7355dd54;
     margin: 0.5rem;
+    -webkit-tap-highlight-color: transparent; /* Prevent tap highlight on mobile */
+    outline: none; /* Remove focus outline */
 }
 .box:active{
     scale: 0.94;
@@ -122,4 +124,42 @@ button:active{
     color: black; /* Optional: Change text color */
     box-shadow: 4px 4px 1px rgba(255, 255, 0, 0.473);
     transition: 0.6s
+  }
+
+
+  @media (max-width:800px) {
+      .game{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+      .result-area{
+          margin-top: 5rem;
+          width: 90vw;
+      }
+  }
+
+  @media (max-width:500px) {
+      .game{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .box{
+          width: 11rem;
+          height: 11rem;
+      }
+  }
+  @media (max-width:420px) {
+      .game{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .box{
+          width: 9.5rem;
+          height: 9.5rem;
+      }
   }
